@@ -9,7 +9,7 @@ import { ReactComponent as MyFriendsLogo } from '~/assets/my_friends_icon.svg';
 export default function AsideLives() {
   return (
     <AsideBox>
-      <IconAside>
+      <IconAside to="/">
         <i className="far fa-heart" />
       </IconAside>
       <ListChannels>
@@ -28,6 +28,7 @@ export default function AsideLives() {
           isOn
         />
         <ItemChannel
+          isOn={false}
           name="livinginweelchair"
           category="Ciência e tecnologia"
           transmission="Trabalhando em um freela wordpress"
@@ -55,7 +56,7 @@ export default function AsideLives() {
           isOn
         />
       </ListChannels>
-      <LinkAside>
+      <LinkAside to="/">
         <MyFriendsLogo />
       </LinkAside>
     </AsideBox>

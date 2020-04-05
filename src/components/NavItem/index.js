@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropType from 'prop-types';
+
 import { NavCompleteItem, NavItem as NavItemed, Disclaimer } from './styles';
 
 export default class NavItem extends React.Component {
@@ -45,13 +47,13 @@ export default class NavItem extends React.Component {
 }
 
 NavItem.propTypes = {
-  name: String,
-  actived: Boolean,
-  icon: String,
+  name: PropType.string,
+  actived: PropType.bool,
+  icon: PropType.string,
 };
 
 NavItem.defaultProps = {
-  name: String,
-  icon: String,
-  actived: false,
+  name: PropType.string,
+  icon: PropType.string,
+  actived: PropType.bool,
 };

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropType from 'prop-types';
+
 import {
   ItemChannel as ChannelBox,
   IconChannel,
@@ -49,7 +51,7 @@ export default class ItemChannel extends React.Component {
           this.handleCard();
         }}
       >
-        <ChannelBox id={`channel_item_${name}`}>
+        <ChannelBox to="/" id={`channel_item_${name}`}>
           <IconChannel src={icon} alt="Imagem do Canal X" />
           <StatusChannel status={isOn} />
         </ChannelBox>
@@ -66,18 +68,18 @@ export default class ItemChannel extends React.Component {
 }
 
 ItemChannel.propTypes = {
-  isOn: Boolean,
-  icon: String,
-  name: String,
-  category: String,
-  transmission: String,
+  isOn: PropType.bool,
+  icon: PropType.string,
+  name: PropType.string,
+  category: PropType.string,
+  transmission: PropType.string,
 };
 
 ItemChannel.defaultProps = {
-  isOn: Boolean,
-  name: String,
-  transmission: 'Nenhuma transmissão encontrada',
-  category: 'Nenhuma categoria encontrada',
+  isOn: PropType.bool,
+  name: PropType.string,
+  transmission: PropType.string,
+  category: PropType.string,
   icon:
     'https://static-cdn.jtvnw.net/jtv_user_pictures/5d60c341-feb0-431d-bff0-e9c8145db5f8-profile_image-70x70.png',
 };

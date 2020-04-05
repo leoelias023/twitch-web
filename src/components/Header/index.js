@@ -24,7 +24,7 @@ export default class Header extends React.Component {
             <MiniLogoSvg alt="Logo da twitch" />
           </Link>
           <NavItem actived icon="fas fa-bell" name="Discover" />
-          <NavItem icon="fas fa-bong" name="Browser" />
+          <NavItem actived={false} icon="fas fa-bong" name="Browser" />
         </NavBar>
         <ButtonsSec>
           <BtnBox>Teste</BtnBox>
