@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import Header from '~/components/Header/index';
+import AsideLives from '~/components/AsideLives';
 
 export default class Main extends React.Component {
   constructor(props) {
@@ -10,6 +11,11 @@ export default class Main extends React.Component {
   }
 
   render() {
-    return <Header />;
+    return (
+      <>
+        <Header />
+        <AsideLives />
+      </>
+    );
   }
 }

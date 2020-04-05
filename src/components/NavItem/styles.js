@@ -27,7 +27,7 @@ export const NavItem = styled.a`
 `;
 
 export const NavCompleteItem = styled.div`
-  margin: 0 15px;
+  margin: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

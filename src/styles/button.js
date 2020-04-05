@@ -10,4 +10,14 @@ export const BtnBox = styled.button`
   font-size: 13px;
   margin: 0 5px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #454545;
+  }
+`;
+
+export const BtnSignUp = styled(BtnBox)`
+  &:hover {
+    background-color: #9362de;
+  }
 `;
